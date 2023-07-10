@@ -67,7 +67,7 @@ const dummyMeals = [
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+        'https://media.istockphoto.com/id/1174657282/photo/pasta-spaghetti-with-tomato-sauce-in-black-bowl-on-grey-stone-background-top-view.jpg?s=612x612&w=0&k=20&c=wNDiXiYM-mfxv3vaDnzeVEuJhpDYuppnCyxXNBZWm6U=',
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -129,7 +129,7 @@ const dummyMeals = [
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+        'https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534.jpg',
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -160,7 +160,7 @@ const dummyMeals = [
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+        'https://media.istockphoto.com/id/486564840/photo/homemade-breaded-german-weiner-schnitzel.jpg?s=612x612&w=0&k=20&c=3PFhckR3QnosoicnBgUEOCE_ni_9ijcyvA-HfQmgsAM=',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -197,7 +197,7 @@ const dummyMeals = [
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+        'https://theviewfromgreatisland.com/wp-content/uploads/2021/07/smoked-salmon-salad-sandwich-.jpg',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -232,7 +232,7 @@ const dummyMeals = [
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+        'https://amandascookin.com/wp-content/uploads/2021/03/Whipped-Jello-Mandarin-Orange-Mousse-FB.jpg',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -267,7 +267,7 @@ const dummyMeals = [
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+        'https://cdn.pixabay.com/photo/2017/08/02/10/15/restaurant-2570683_1280.jpg',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -298,7 +298,7 @@ const dummyMeals = [
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+        'https://images.squarespace-cdn.com/content/v1/5cef7b136434550001a53d10/1628863084677-KWXY8AUOYUQBW08P9EQF/sambar+chicken+4.jpg?format=1000w',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -331,7 +331,7 @@ const dummyMeals = [
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+        'https://media.gettyimages.com/id/1251520642/photo/chocolate-souffle-served-with-strawberries.jpg?s=1024x1024&w=gi&k=20&c=ZxXNkoJEJhH_GzlylYCQnJS0cxI4gcd3qXomdWtDI4o=',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -382,7 +382,7 @@ const dummyMeals = [
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+        'https://www.coles.com.au/content/dam/coles/inspire-create/oct20-images/Oct20-bbq-asparagus-caprese-salad-976x549.jpg',
     duration: 30,
     ingredients: [
       'White and Green Asparagus',
