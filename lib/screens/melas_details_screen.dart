@@ -15,7 +15,9 @@ class MealsDetailsScreen extends StatelessWidget {
   Widget build(BuildContext ctx) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(meal.title),
+          title: Text(
+            meal.title,
+          ),
           actions: [
             IconButton(
                 onPressed: () {
@@ -53,7 +55,7 @@ class MealsDetailsScreen extends StatelessWidget {
                 height: 24,
               ),
               Text(
-                'steps',
+                'Steps',
                 style: Theme.of(ctx).textTheme.titleLarge!.copyWith(
                     color: Theme.of(ctx).colorScheme.primary,
                     fontWeight: FontWeight.bold),
