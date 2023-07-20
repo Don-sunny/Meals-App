@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:meals_app/models/meals.dart';
+import 'package:meals_app/providers/favorites_provider.dart';
 
-class MealsDetailsScreen extends StatelessWidget {
+class MealsDetailsScreen extends ConsumerWidget {
   const MealsDetailsScreen({
     super.key,
     required this.meal,
-    required this.ontToggleFavorite,
   });
 
   final Meal meal;
-  final void Function(Meal meal) ontToggleFavorite;
 
+  // widget ref listening for providers.
   @override
-  Widget build(BuildContext ctx) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -21,7 +22,17 @@ class MealsDetailsScreen extends StatelessWidget {
           actions: [
             IconButton(
                 onPressed: () {
-                  ontToggleFavorite(meal);
+                  final wasAdded = ref
+                      .read(favoriteMealsProvider.notifier)
+                      .toggleMealFavoriteStatus(meal);
+                  ScaffoldMessenger.of(context).clearSnackBars();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(wasAdded
+                          ? 'Meal added as a favorite.'
+                          : 'Meal removed'),
+                    ),
+                  );
                 },
                 icon: const Icon(Icons.star))
           ],
@@ -40,15 +51,15 @@ class MealsDetailsScreen extends StatelessWidget {
               ),
               Text(
                 'Ingredients',
-                style: Theme.of(ctx).textTheme.titleLarge!.copyWith(
-                    color: Theme.of(ctx).colorScheme.primary,
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold),
               ),
               for (final ingredients in meal.ingredients)
                 Text(
                   ingredients,
-                  style: Theme.of(ctx).textTheme.bodyMedium!.copyWith(
-                        color: Theme.of(ctx).colorScheme.onBackground,
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onBackground,
                       ),
                 ),
               const SizedBox(
@@ -56,8 +67,8 @@ class MealsDetailsScreen extends StatelessWidget {
               ),
               Text(
                 'Steps',
-                style: Theme.of(ctx).textTheme.titleLarge!.copyWith(
-                    color: Theme.of(ctx).colorScheme.primary,
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold),
               ),
               for (final step in meal.steps)
@@ -68,8 +79,8 @@ class MealsDetailsScreen extends StatelessWidget {
                     child: Text(
                       step,
                       textAlign: TextAlign.center,
-                      style: Theme.of(ctx).textTheme.bodyMedium!.copyWith(
-                            color: Theme.of(ctx).colorScheme.onBackground,
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: Theme.of(context).colorScheme.onBackground,
                           ),
                     ),
                   ),
